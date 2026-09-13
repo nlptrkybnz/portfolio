@@ -177,13 +177,20 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -0.02em; line-heig
 /* portrait + facts */
 .hero-figure { display: flex; flex-direction: column; align-items: center; gap: 28px; }
 
-.portrait { position: relative; width: min(70vw, 260px); will-change: transform; }
+.portrait {
+  position: relative;
+  width: min(70vw, 260px);
+  line-height: 0;
+  will-change: transform;
+}
 .portrait::before {
   content: ''; position: absolute; inset: 16px -16px -16px 16px;
+  z-index: 0;
   background: var(--accent); border-radius: 10px;
 }
 .portrait img {
-  position: relative; width: 100%; height: auto;
+  position: relative; z-index: 1;
+  width: 100%; height: auto;
   aspect-ratio: 4 / 5; object-fit: cover;
   border-radius: 10px; background: #fff;
 }
@@ -192,10 +199,12 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -0.02em; line-heig
 .status-tag {
   position: absolute;
   left: -14px; bottom: 22px;
-  z-index: 2;
+  z-index: 3;
   display: inline-flex; align-items: center; gap: 7px;
   margin: 0;
-  padding: 7px 13px 7px 11px;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 8px 13px 8px 11px;
   background: var(--accent);
   color: var(--ink);
   font-size: 11.5px; font-weight: 700;
