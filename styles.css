@@ -188,6 +188,52 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -0.02em; line-heig
   border-radius: 10px; background: #fff;
 }
 
+/* availability */
+.status-tag {
+  position: absolute;
+  left: -14px; bottom: 22px;
+  z-index: 2;
+  display: inline-flex; align-items: center; gap: 7px;
+  margin: 0;
+  padding: 7px 13px 7px 11px;
+  background: var(--accent);
+  color: var(--ink);
+  font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  border-radius: var(--radius);
+  transform: rotate(-3deg);
+  box-shadow: 0 6px 18px rgba(30, 54, 2, 0.16);
+}
+
+.dot {
+  position: relative;
+  width: 7px; height: 7px; flex: none;
+  border-radius: 50%;
+  background: var(--ink);
+}
+.dot::after {
+  content: '';
+  position: absolute; inset: 0;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+}
+
+.available {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin: 0 0 30px;
+  font-size: 0.98rem;
+  color: var(--cream-85);
+}
+.available .dot { background: var(--accent); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .dot::after { animation: ping 2.6s var(--ease) infinite; }
+  @keyframes ping {
+    0%        { transform: scale(1);   opacity: 0.7; }
+    70%, 100% { transform: scale(2.6); opacity: 0; }
+  }
+}
+
 .facts {
   display: flex; gap: 28px; margin: 0;
   font-size: 0.85rem;
