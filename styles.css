@@ -336,6 +336,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -0.02em; line-heig
 .list li { margin-bottom: 9px; }
 .list li::marker { color: var(--accent); }
 
+.project-divider { height: 1px; background: var(--cream-18); margin: 76px 0 64px; }
+
 /* ---------- product shot ---------- */
 .shot { margin: 56px 0 64px; }
 .shot-frame { position: relative; }
