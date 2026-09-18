@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Neil Patrick Ybañez | Senior Software Engineer</title>
-<meta name="description" content="Senior software engineer and technical lead. Eleven years building production software in C#, C++, Java and ColdFusion, and builder of Tessera, a multi-tenant help desk platform, and Huwamco, a device fleet management platform. Open to new roles.">
+<meta name="description" content="Senior software engineer and technical lead. Eleven years building production software in C#, C++, Java and ColdFusion, and builder of Huwamco, a device fleet management platform, and Tessera, a multi-tenant help desk platform. Open to new roles.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=20260918">
+<link rel="stylesheet" href="styles.css?v=20260918b">
 </head>
 <body>
 
@@ -151,53 +151,6 @@
   <section class="band band-dark" id="work">
     <div class="wrap center">
       <p class="eyebrow accent anim" data-anim="up">Featured build</p>
-      <h2 class="display anim" data-anim="up" data-delay="1">Tessera</h2>
-      <p class="lede anim" data-anim="up" data-delay="2">
-        A multi-tenant help desk platform for managed service providers. Client
-        organizations share one Postgres database, kept apart by row-level security, with
-        the whole support loop running on real background jobs instead of blocking requests.
-      </p>
-
-      <p class="hero-links anim" data-anim="up" data-delay="3">
-        <a class="chev light" href="https://tessera-psi-ochre.vercel.app/" target="_blank" rel="noopener">Visit the live app</a>
-        <a class="chev light" href="https://github.com/nlptrkybnz/tessera" target="_blank" rel="noopener">View the code</a>
-      </p>
-
-      <figure class="shot anim" data-anim="scale">
-        <div class="shot-frame">
-          <img src="assets/tessera-app.jpg" alt="The Tessera ticket queue, showing tickets across several client organizations with priority, SLA and status labels" width="1968" height="745" loading="lazy">
-        </div>
-        <figcaption>The ticket queue: one view across every client, with SLA timers per priority.</figcaption>
-      </figure>
-
-      <ul class="features">
-        <li class="anim" data-anim="up">
-          <h4>Isolation you can prove</h4>
-          <p>Multi-tenant separation enforced in Postgres with row-level security, checked by an automated isolation test suite.</p>
-        </li>
-        <li class="anim" data-anim="up" data-delay="1">
-          <h4>AI that stays out of the way</h4>
-          <p>Ticket review and reply drafting on a background queue with retries, so a slow model never blocks a page load.</p>
-        </li>
-        <li class="anim" data-anim="up" data-delay="2">
-          <h4>SLAs that understand business hours</h4>
-          <p>Deadline maths that walks working hours in any timezone, with automatic breach detection and email digests.</p>
-        </li>
-        <li class="anim" data-anim="up" data-delay="3">
-          <h4>A portal each client recognises</h4>
-          <p>Self-service portal with magic-link auth, per-client theming, and Stripe subscription billing with plan limits.</p>
-        </li>
-      </ul>
-
-      <ul class="chips anim" data-anim="up">
-        <li>Next.js 15</li><li>React 19</li><li>TypeScript</li><li>Supabase</li>
-        <li>PostgreSQL</li><li>Drizzle ORM</li><li>Inngest</li><li>Stripe</li>
-      </ul>
-      <p class="note anim" data-anim="up">Source is a private repository, access on request</p>
-
-      <div class="project-divider anim" data-anim="up"></div>
-
-      <p class="eyebrow accent anim" data-anim="up">Also built</p>
       <h2 class="display anim" data-anim="up" data-delay="1">Huwamco</h2>
       <p class="lede anim" data-anim="up" data-delay="2">
         A device fleet platform for a fictional IT company. Printers and IT peripherals
@@ -240,6 +193,53 @@
       <ul class="chips anim" data-anim="up">
         <li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Supabase</li>
         <li>PostgreSQL</li><li>Drizzle ORM</li><li>Tailwind CSS</li><li>Groq</li>
+      </ul>
+      <p class="note anim" data-anim="up">Source is a private repository, access on request</p>
+
+      <div class="project-divider anim" data-anim="up"></div>
+
+      <p class="eyebrow accent anim" data-anim="up">Also built</p>
+      <h2 class="display anim" data-anim="up" data-delay="1">Tessera</h2>
+      <p class="lede anim" data-anim="up" data-delay="2">
+        A multi-tenant help desk platform for managed service providers. Client
+        organizations share one Postgres database, kept apart by row-level security, with
+        the whole support loop running on real background jobs instead of blocking requests.
+      </p>
+
+      <p class="hero-links anim" data-anim="up" data-delay="3">
+        <a class="chev light" href="https://tessera-psi-ochre.vercel.app/" target="_blank" rel="noopener">Visit the live app</a>
+        <a class="chev light" href="https://github.com/nlptrkybnz/tessera" target="_blank" rel="noopener">View the code</a>
+      </p>
+
+      <figure class="shot anim" data-anim="scale">
+        <div class="shot-frame">
+          <img src="assets/tessera-app.jpg" alt="The Tessera ticket queue, showing tickets across several client organizations with priority, SLA and status labels" width="1968" height="745" loading="lazy">
+        </div>
+        <figcaption>The ticket queue: one view across every client, with SLA timers per priority.</figcaption>
+      </figure>
+
+      <ul class="features">
+        <li class="anim" data-anim="up">
+          <h4>Isolation you can prove</h4>
+          <p>Multi-tenant separation enforced in Postgres with row-level security, checked by an automated isolation test suite.</p>
+        </li>
+        <li class="anim" data-anim="up" data-delay="1">
+          <h4>AI that stays out of the way</h4>
+          <p>Ticket review and reply drafting on a background queue with retries, so a slow model never blocks a page load.</p>
+        </li>
+        <li class="anim" data-anim="up" data-delay="2">
+          <h4>SLAs that understand business hours</h4>
+          <p>Deadline maths that walks working hours in any timezone, with automatic breach detection and email digests.</p>
+        </li>
+        <li class="anim" data-anim="up" data-delay="3">
+          <h4>A portal each client recognises</h4>
+          <p>Self-service portal with magic-link auth, per-client theming, and Stripe subscription billing with plan limits.</p>
+        </li>
+      </ul>
+
+      <ul class="chips anim" data-anim="up">
+        <li>Next.js 15</li><li>React 19</li><li>TypeScript</li><li>Supabase</li>
+        <li>PostgreSQL</li><li>Drizzle ORM</li><li>Inngest</li><li>Stripe</li>
       </ul>
       <p class="note anim" data-anim="up">Source is a private repository, access on request</p>
     </div>
